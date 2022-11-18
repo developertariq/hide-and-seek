@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tariq's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+      name="description"
+      content="An aspiring software developer with experience in desktop, web & mobile applications."
+    />
+    <link 
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Crete Round|Inter|Roboto|Poppins"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <a href="#">Md Tariq-ul Islam</a>      
+      <div id='dropdown' class="dropdown-menu hide">
+        <span class="closebtn" onclick="closeNav()">&times;</span>
+        <ul id='mobile-menulist' onclick="closeNav()">
+          <li><a href="#recent-works">Portfolio</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </div>
+      <ul id="menu-list" >
+        <li><a class="header-menu" href="#recent-works">Portfolio</a></li>
+        <li><a class="header-menu" href="#about-me">About</a></li>
+        <li><a class="header-menu" href="#contact-me">Contact</a></li>
+        <li><a class="header-menu" href="#"><i class="fas fa-envelope-square"></i></a></li>
+      </ul>
+      <button type="button" id="myLinks" onclick="openNav()" class="openbtn"><i class="fa fa-bars"></i></button> 
+    </nav>
+    <header class="header">      
+      <div class="intro">
+        <h1 id="intro-greet">Hey There. I'm Tariq</h1>
+        <h4 id="intro-work">I am a Software Developer</h4>
+        <p id="intro-msg">I can help you build a product, feature or website look through some of my
+          work and experience. If you like what you see and have a project you need coded, don't
+          hesitate to contact me.</p>
+        <ul id="intro-social-media" class="media-icon">
+          <li><a href="https://github.com/"><i class='fab fa-github'></i></a></li>          
+          <li><a href="https://www.linkedin.com/"><i class='fab fa-linkedin-in'></i></a></li>                   
+          <li><a href="https://angel.co/"><i class='fab fa-angellist'></i></a></li>
+          <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://medium.com/"><i class="fab fa-medium-m"></i></a></li>
+        </ul>
+        <div class="intro-image"></div>
+      </div>
+    </header>
+    <section id="recent-works">
+      <div id="work-heading">
+        <h2>My Recent Works</h2>
+      </div>
+      <article id="top-work">
+        <div class="top-work-pic"><img id="img-animation" class="top-work-img" src="" alt=""></div>
+        <h3 id="" class="work-name"></h3>
+        <p class="description">
+        </p>
+        <ul id="top-proj-lang">
+        </ul>
+        <a href= "#" id="top-work-view" onclick="showDetails(this.parentElement)">See Project</a>
+      </article>
+      <article id="work2" class="other-works feature-work">
+        <h3 class="work-name"></h3>
+        <p class="description"></p>
+        <ul class="proj-lang"></ul>
+        <a class="feature-work-link" href="#" onclick="showDetails(this.parentElement)">See Project</a>
+      </article>
+      <article id="work3" class="other-works">
+        <h3 class="work-name"></h3>
+        <p class="description"></p>
+        <ul class="proj-lang"></ul>
+        <a class="view-work" href="#" onclick="showDetails(this.parentElement)">See Project</a>
+      </article>
+      <article id="work4" class="other-works">
+        <h3 class="work-name"></h3>
+        <p class="description"></p>
+        <ul class="proj-lang"></ul>
+        <a class="view-work" href="#" onclick="showDetails(this.parentElement)">See Project</a>
+      </article>
+      <article id="work5" class="other-works">
+        <h3 class="work-name"></h3>
+        <p class="description"></p>
+        <ul class="proj-lang">
+        </ul>
+        <a id="work-5" class="view-work" href="#" onclick="showDetails(this.parentElement)">See Project</a>
+      </article>
+      <article id="work6" class="other-works">
+        <h3 class="work-name"></h3>
+        <p class="description"></p>
+        <ul class="proj-lang">
+        </ul>
+        <a id="work-6" class="view-work" href="#" onclick="showDetails(this.parentElement)">See Project</a>
+      </article>
+      <article id="work7" class="other-works" onloadstart='fillWindow(this)'>
+        <h3 class="work-name"></h3>
+        <p class="description"></p>
+        <ul class="proj-lang"></ul>
+        <a class="view-work" href="#" onclick="showDetails(this.parentElement)">See Project</a>
+      </article>
+    </section>
+    <section id="about-me">
+      <div id="resume">
+        <h2>About me</h2>
+        <p>
+          I am a Software Developer. I can help you build a product, feature or website look through some of my
+          work and experience. If you like what you see and have a project you need coded, don't hesitate to
+          contact me.
+        </p>
+        <a href="">Get My Resume</a>
+        <div id="placeholder3"></div>
+      </div>
+      <div id="skills">
+        <ul class="prog-lang">
+          <li>Language
+            <ul class="skill">
+              <li>Javascript</li>
+              <li>Ruby</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="prog-fram">
+          <li>Frameworks
+            <ul class="skill">
+              <li>Bootstrap</li>
+              <li>Ruby on Rails</li>
+              <li>RSPec</li>
+              <li>CapyBara</li>
+              <li>Selenium</li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="prog-skil">
+          <li>Skills
+            <ul class="skill">
+              <li>Codekit</li>
+              <li>Github</li>
+              <li>Codepen</li>
+              <li>Gitlab</li>
+              <li>Terminal</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact-me" class="contact-me">
+      <h2 id="contact-para">I'm always interested in hearing about new projects,
+        so if you'd like to chat please get in touch.</h2>
+      <form id="contact-me-form" action="https://formspree.io/f/meqdpjbw" target="_blank" method="post">
+        <fieldset>
+          <div class="person-name">
+            <input type="text" id="firstname" name="firstname" maxlength="30" placeholder="First name" onchange='storeData()' />
+            <input type="text" id="lastname" name="lastname" maxlength="30" placeholder="Last name"  />
+          </div>          
+          <input type="text" id="name" name="fullname" maxlength="30" placeholder="Full name" />          
+          <input type="email" id="email" name="email" placeholder="Email address" />          
+          <textarea id="msg" class="form-msg" name="msg" maxlength="500" placeholder="Enter text here"></textarea>
+          <small></small>
+          <input type="submit" id="submitbtn" value="Get in touch"> 
+        </fieldset>
+      </form>
+      <ul id="contact-social-media">
+        <li><a href="https://github.com/"><i class='fab fa-github'></i></a></li>          
+        <li><a href="https://www.linkedin.com/"><i class='fab fa-linkedin-in'></i></a></li>                   
+        <li><a href="https://angel.co/"><i class='fab fa-angellist'></i></a></li>
+        <li ><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://medium.com/"><i class="fab fa-medium-m"></i></a></li>
+      </ul>
+    </section>
+    <script src="./storedata.js"></script>
+    <script src="./validation.js"></script>
+    <script src="./projectdata.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
